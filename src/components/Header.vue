@@ -27,18 +27,18 @@
         </ul>
         <ul class="navbar-nav">
           <li>
-            <router-link to="/channel">新闻中心</router-link>
+            <router-link to="/channel" class="nav-link">新闻中心</router-link>
           </li>
         </ul>
         <ul class="navbar-nav">
           <li>
-            <router-link class="nav-link" to="/about">关于我们</router-link>
+            <router-link class="nav-link" to="/about" >关于我们</router-link>
           </li>
         </ul>
-        <ul >
-          <li class="use">
-             <router-link v-if="$store.state.userlogin == false" to="/login">登录 / 注册</router-link>
-             <router-link v-else to="/person">个人空间</router-link>
+        <ul class="navbar-nav">
+          <li>
+             <router-link v-if="$store.state.userlogin == false" to="/login" class="nav-link">登录 / 注册</router-link>
+             <router-link v-else to="/person" class="nav-link">个人空间</router-link>
           </li>
          
         </ul>
@@ -73,7 +73,7 @@ export default {
   }
 }
 .use{
-  padding-top: 15px;
+
 }
 .w1{min-width: 130px;}
 .top_nav{

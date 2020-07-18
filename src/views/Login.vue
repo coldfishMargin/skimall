@@ -355,9 +355,8 @@ export default {
     text-decoration: none;
     font-size: 15px ;
     border: 1px solid #99cc66;
-    
+    color: #fff;
     font-weight:600;
-    color: #99cc66;
 
  }
 /* 登录注册按钮样式结束 */

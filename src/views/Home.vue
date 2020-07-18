@@ -2,13 +2,14 @@
   <div>
     <my-header></my-header>
     <!-- 轮播开始 -->
-    <div class="title_a title_b">
+    
+    <div id="banner">
+      <div class="title_a title_b">
       <span>极度零点</span><br>
       <span class="content_text">我们致力于营造精简购物风!希望给您带来良好的购物体验</span>
       <br>
       <router-link to='/msmall/polar_shop_lady'>进入商城</router-link>
     </div>
-    <div id="banner">
       <img src="../assets/nav1.jpg" v-if="!nav" alt />
       <img src="../assets/nav2.png" v-else alt />
       
@@ -121,7 +122,7 @@ export default {
     position:absolute;
     z-index:1000;
     left:15%;
-    top:40%;
+    top:20%;
     text-align: center;
   }
   .title_b>a{
@@ -139,6 +140,10 @@ export default {
     transform: translate(-45%,-150%);
     text-align: center;
     list-style: none;
+  }
+  .title_b>a{
+    
+    margin: 0px auto !important;
   }
   
 }
